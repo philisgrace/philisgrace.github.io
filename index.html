@@ -233,6 +233,77 @@ body {
   border-radius: 4px;
   box-shadow: 0 2px 14px rgba(0,0,0,0.18);
 }
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+  .menubar {
+    gap: 10px;
+  }
+  .mb-item:not(:first-of-type) {
+    display: none;
+  }
+
+  .desktop {
+    padding: 12px 12px 32px;
+    align-items: flex-start;
+  }
+
+  .mac-window {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.55) inset,
+      0 8px 32px rgba(0,0,0,0.2);
+  }
+
+  .win-body {
+    grid-template-columns: 1fr;
+  }
+
+  /* image comes first on mobile */
+  .win-right {
+    order: -1;
+    min-height: auto;
+    padding: 20px 20px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .win-right img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .win-left {
+    padding: 28px 24px 32px;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: none;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .bio {
+    font-size: 11px;
+    padding-bottom: 6px;
+    text-align: center;
+  }
+
+  .folders {
+    gap: 20px;
+  }
+
+  .folder-icon {
+    width: 52px;
+    height: 44px;
+  }
+
+  .contact {
+    font-size: 9px;
+  }
+}
 </style>
 </head>
 <body>
